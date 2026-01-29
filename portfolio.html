@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avantika Singh | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #fdf6ff, #fef9f3);
+      color: #3d3d3d;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 60px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #9b8cff; /* pastel lavender */
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: #7a7a7a;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: #fffdfc;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(180, 160, 255, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(180, 160, 255, 0.25);
+    }
+
+    .card h2 {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      color: #a58bff;
+    }
+
+    .card p,
+    .card li {
+      font-size: 0.95rem;
+      color: #5f5f5f;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: "✦ ";
+      color: #f2a7c6; /* pastel pink */
+      font-weight: 600;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-top: 8px;
+      color: #9b8cff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px 50px;
+      color: #8a8a8a;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Avantika Singh</h1>
+    <p>Student | Aspiring Developer | Hackoweek Participant</p>
+  </header>
+
+  <section>
+    <div class="card-grid">
+
+      <div class="card">
+        <h2>About Me</h2>
+        <p>
+          I am a passionate student exploring the world of technology and development.
+          I enjoy learning new skills, building creative projects, and participating in
+          hackathons like Hackoweek to challenge myself and grow.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Education</h2>
+        <ul>
+          <li>Bachelor's Degree (Ongoing)</li>
+          <li>Branch: Computer Science</li>
+          <li>College / University: SIT Nagpur</li>
+          <li>12th Std (2024–25) – Delhi Public School, Durg</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML, CSS, Basic JavaScript</li>
+          <li>C / Python (Basics)</li>
+          <li>Problem Solving</li>
+          <li>Team Collaboration</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Projects</h2>
+        <ul>
+          <li>Personal Portfolio Website</li>
+          <li>Mini College Projects</li>
+          <li>Hackoweek Project (In Progress)</li>
+        </ul>
+      </div>
+
+      <div class="card contact">
+        <h2>Contact</h2>
+        <p>Email: avantikakgh@gmail.com</p>
+        <p>Phone: +91-7802053000</p>
+        <a href="#">LinkedIn Profile</a><br />
+        <a href="#">GitHub Profile</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Avantika Singh
+  </footer>
+
+</body>
+</html>
