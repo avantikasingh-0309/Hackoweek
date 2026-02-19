@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Destinations | Wanderlust Diaries</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin:0;
+    font-family:'Montserrat', sans-serif;
+    background:#fff8f5;
+    color:#333;
+  }
+  a {text-decoration:none; color:inherit;}
+
+  /* ===== Header ===== */
+  header {
+    text-align:center;
+    padding:3rem 1rem 2rem;
+  }
+  header h1 {
+    font-family:'Playfair Display', serif;
+    font-size:3rem;
+    color:#ff7f50;
+  }
+  header p {
+    font-size:1.2rem;
+    color:#555;
+    margin-top:0.5rem;
+  }
+
+  /* ===== Hero Section ===== */
+  .hero {
+    background:linear-gradient(rgba(255,127,80,0.3), rgba(255,127,80,0.3)),
+               url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+    height:35vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+    margin-bottom:3rem;
+  }
+  .hero h2 {
+    font-size:2.5rem;
+    font-family:'Playfair Display', serif;
+    text-shadow:1px 1px 12px rgba(0,0,0,0.4);
+  }
+
+  /* ===== Destinations Grid ===== */
+  .grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+    gap:2rem;
+    padding:0 2rem 3rem;
+    max-width:1200px;
+    margin:0 auto;
+  }
+  .card {
+    border-radius:25px;
+    overflow:hidden;
+    position:relative;
+    cursor:pointer;
+    transition:transform 0.3s, box-shadow 0.3s;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+  }
+  .card:hover {
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+  }
+  .card img {
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    display:block;
+  }
+  .card .content {
+    padding:1.5rem;
+    text-align:center;
+    background:linear-gradient(135deg,#ffecd2,#fcb69f);
+  }
+  .card h3 {
+    font-family:'Playfair Display', serif;
+    color:#ff7f50;
+    margin-bottom:0.5rem;
+  }
+  .card p {
+    color:#555;
+    font-size:0.95rem;
+  }
+
+  /* Fade-in animation */
+  .fade-in {opacity:0; transform:translateY(20px); animation:fadeIn 1s forwards;}
+  .fade-in:nth-child(1){animation-delay:0.2s;}
+  .fade-in:nth-child(2){animation-delay:0.4s;}
+  .fade-in:nth-child(3){animation-delay:0.6s;}
+  .fade-in:nth-child(4){animation-delay:0.8s;}
+  .fade-in:nth-child(5){animation-delay:1s;}
+  .fade-in:nth-child(6){animation-delay:1.2s;}
+
+  @keyframes fadeIn {
+    to {opacity:1; transform:translateY(0);}
+  }
+
+  /* Footer */
+  footer {
+    background:#fff0f5;
+    text-align:center;
+    padding:2rem;
+    margin-top:3rem;
+    color:#555;
+  }
+
+  /* Responsive */
+  @media(max-width:768px){
+    .grid{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <h1>Wanderlust Diaries</h1>
+  <p>Discover amazing destinations around the world.</p>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h2>Destinations</h2>
+</section>
+
+<!-- Destinations Grid -->
+<section class="grid">
+  <a href="post1.html" class="card fade-in">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Alps">
+    <div class="content">
+      <h3>The Alps</h3>
+      <p>Explore the breathtaking mountain trails and serene landscapes.</p>
+    </div>
+  </a>
+  <a href="post2.html" class="card fade-in">
+    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80" alt="Paris">
+    <div class="content">
+      <h3>Paris</h3>
+      <p>Wander through charming streets, cafés, and art alleys in the City of Lights.</p>
+    </div>
+  </a>
+  <a href="post3.html" class="card fade-in">
+    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="Bali">
+    <div class="content">
+      <h3>Bali</h3>
+      <p>Relax on serene beaches with soft sands and turquoise waters.</p>
+    </div>
+  </a>
+  <a href="post4.html" class="card fade-in">
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Tokyo">
+    <div class="content">
+      <h3>Tokyo</h3>
+      <p>Experience vibrant streets, unique culture, and dazzling nightlife.</p>
+    </div>
+  </a>
+  <a href="post5.html" class="card fade-in">
+    <img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?auto=format&fit=crop&w=800&q=80" alt="Safari">
+    <div class="content">
+      <h3>African Safari</h3>
+      <p>Get close to wildlife in Africa's most stunning national parks.</p>
+    </div>
+  </a>
+  <a href="post6.html" class="card fade-in">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e1?auto=format&fit=crop&w=800&q=80" alt="Maldives">
+    <div class="content">
+      <h3>Maldives</h3>
+      <p>Experience turquoise waters, overwater villas, and tropical paradise.</p>
+    </div>
+  </a>
+</section>
+
+<!-- Footer -->
+<footer>
+  &copy; 2026 Wanderlust Diaries. All Rights Reserved.
+</footer>
+
+</body>
+</html>
